@@ -12,7 +12,7 @@ constant integer BUFF_ID = 'A011';
     function onRemove(Buff buf) {
         HealTarget(buf.bd.caster, buf.bd.target, 2000.0, SpellData[SID_LIFE_BLOOMHEX].name, 0.0);
         AddTimedEffect.atUnit(ART_HEAL, buf.bd.target, "origin", 0.2);
-        //BJDebugMsg("����");
+        //BJDebugMsg("绽放");
     }
 
     function onCast() {

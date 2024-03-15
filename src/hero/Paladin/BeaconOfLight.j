@@ -82,7 +82,7 @@ constant integer BUFF_ID = 'A03D';
             thistype this;
             if (!thistype.ht.exists(u)) {
                 this = thistype.allocate();
-                //BJDebugMsg("New ��");
+                //BJDebugMsg("New 了");
                 thistype.ht[u] = this;
                 this.primary = null;
                 this.extras = NewGroup();
@@ -100,7 +100,7 @@ constant integer BUFF_ID = 'A03D';
     }
 
     function onEffect(Buff buf) {
-        //BJDebugMsg("Ҫִ�а�,�µ�Ŀ����"+GetUnitNameEx(buf.bd.target));
+        //BJDebugMsg("要执行吧,新的目标是"+GetUnitNameEx(buf.bd.target));
         BeaconOfLight[buf.bd.caster].newPrimary(buf.bd.target);
     }
     

@@ -74,7 +74,7 @@ library StormStrike requires DamageSystem, SpellData, BuffSystem, EarthBinderGlo
                 CoolDown(SpellEvent.CastingUnit, SID_EARTH_SHOCK);
                 CoolDown(SpellEvent.CastingUnit, SID_EARTH_SHOCK_1);
                 delayedDosth1.start(SpellEvent.CastingUnit);
-                //BJDebugMsg("����CD��??");
+                //BJDebugMsg("重置CD了??");
                 delayedDosth.start(SpellEvent.CastingUnit);
                 RecoverOriginalEarthShock.start(SpellEvent.CastingUnit, 3.0);
                 //BJDebugMsg("6");

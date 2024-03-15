@@ -160,7 +160,7 @@ constant string  ART_RIGHT  = "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpeci
         if (GetUnitTypeId(u) == UTID_DARK_RANGER) {
             if (GetUnitAbilityLevel(u, SID_POWER_OF_ABOMINATION) > 0) {
                 if (!PowerOfAbomination[u].isBanshee) {
-                    BJDebugMsg("Bug ��̬����");
+                    BJDebugMsg("Bug 形态死亡");
                     PowerOfAbomination[u].banshee();
                 }
             }

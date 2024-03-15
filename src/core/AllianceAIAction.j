@@ -1631,29 +1631,29 @@ constant real AIACTION_INTERVAL = 0.33;
     }
     
     function register() {
-        unitCallBack['Hmkg'] = makeOrderHmkg;   // Ѫ���������
-        unitCallBack['Hlgr'] = makeOrderHlgr;   // ��צ��³�� 
-        unitCallBack['Emfr'] = makeOrderEmfr;   // �����ػ���
-        unitCallBack['Hart'] = makeOrderHart;   // ʥ��ʿ
-        unitCallBack['Ofar'] = makeOrderOfar;   // ��ʦ
-        unitCallBack['Obla'] = makeOrderObla;   // ��ʥ
-        unitCallBack['Nbrn'] = makeOrderNbrn;   // �ڰ�����
-        unitCallBack['Hjai'] = makeOrderHjai;   // ������ʦ
-        unitCallBack['Hapm'] = makeOrderHapm;   // �ظ���
-        unitCallBack['H006'] = makeOrderHapm;   // �ظ���
-        unitCallBack['Edem'] = makeOrderEdem;   // ���˽���
-        unitCallBack['Hblm'] = makeOrderHblm;   // ���ͽ
+        unitCallBack['Hmkg'] = makeOrderHmkg;   // 血精灵防御者
+        unitCallBack['Hlgr'] = makeOrderHlgr;   // 利爪德鲁依 
+        unitCallBack['Emfr'] = makeOrderEmfr;   // 丛林守护者
+        unitCallBack['Hart'] = makeOrderHart;   // 圣骑士
+        unitCallBack['Ofar'] = makeOrderOfar;   // 牧师
+        unitCallBack['Obla'] = makeOrderObla;   // 剑圣
+        unitCallBack['Nbrn'] = makeOrderNbrn;   // 黑暗猎手
+        unitCallBack['Hjai'] = makeOrderHjai;   // 寒冰法师
+        unitCallBack['Hapm'] = makeOrderHapm;   // 地缚者
+        unitCallBack['H006'] = makeOrderHapm;   // 地缚者
+        unitCallBack['Edem'] = makeOrderEdem;   // 流浪剑客
+        unitCallBack['Hblm'] = makeOrderHblm;   // 异教徒
         unitLearSkill['Hmkg'] = learnSkillHmkg;   // 
-        unitLearSkill['Hlgr'] = learnSkillHlgr;   // ��צ��³�� 
-        unitLearSkill['Emfr'] = learnSkillEmfr;   // �����ػ���
-        unitLearSkill['Hart'] = learnSkillHart;   // ʥ��ʿ
-        unitLearSkill['Ofar'] = learnSkillOfar;   // ��ʦ
-        unitLearSkill['Obla'] = learnSkillObla;   // ��ʥ
-        unitLearSkill['Nbrn'] = learnSkillNbrn;   // �ڰ�����
-        unitLearSkill['Hjai'] = learnSkillHjai;   // ������ʦ
-        unitLearSkill['Hapm'] = learnSkillHapm;   // �ظ���
-        unitLearSkill['Edem'] = learnSkillEdem;   // ���˽���
-        unitLearSkill['Hblm'] = learnSkillHblm;   // ���ͽ
+        unitLearSkill['Hlgr'] = learnSkillHlgr;   // 利爪德鲁依 
+        unitLearSkill['Emfr'] = learnSkillEmfr;   // 丛林守护者
+        unitLearSkill['Hart'] = learnSkillHart;   // 圣骑士
+        unitLearSkill['Ofar'] = learnSkillOfar;   // 牧师
+        unitLearSkill['Obla'] = learnSkillObla;   // 剑圣
+        unitLearSkill['Nbrn'] = learnSkillNbrn;   // 黑暗猎手
+        unitLearSkill['Hjai'] = learnSkillHjai;   // 寒冰法师
+        unitLearSkill['Hapm'] = learnSkillHapm;   // 地缚者
+        unitLearSkill['Edem'] = learnSkillEdem;   // 流浪剑客
+        unitLearSkill['Hblm'] = learnSkillHblm;   // 异教徒
     }
     
     // learn skills once

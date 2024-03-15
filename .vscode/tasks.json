@@ -1,0 +1,90 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "YDWE",
+      "command": "E:/ChenYin/Tools/YDWE/YDWE.exe",
+      "args": ["-loadfile", "${workspaceRoot}/new.w3x"],
+      "presentation": {"reveal": "silent"}
+    },
+    {
+      "label": "TEST",
+      "command": "E:/ChenYin/Tools/YDWE/YDWE.exe",
+      "args": ["-war3", "-loadfile", "${workspaceRoot}/new.w3x"],
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "LNI",
+      "command": "E:/ChenYin/Tools/W3x2Lni/w2l.exe",
+      "args": ["lni", "new.w3x", "W3X"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "SLK",
+      "command": "E:/ChenYin/Tools/W3x2Lni/w2l.exe",
+      "args": ["slk", "new.w3x"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "OBJ",
+      "command": "E:/ChenYin/Tools/W3x2Lni/w2l.exe",
+      "args": ["obj", "W3X", "new.w3x"],
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "JHC",
+      "command": "E:/ChenYin/Tools/YDWE/compiler/jasshelper/clijasshelper.exe",
+      "args": [
+        "E:/ChenYin/Tools/YDWE/compiler/jass/24/common.j",
+        "E:/ChenYin/Tools/YDWE/compiler/jass/24/blizzard.j",
+        "new.w3x"
+      ],
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {"statusbar": {"hide": true}}
+    },
+    {
+      "type": "shell",
+      "label": "RM1",
+      "command": "Remove-Item",
+      "args": ["-Force", "-Recurse", "backups"],
+      "options": {"statusbar": {"hide": true}}
+    },
+    {
+      "type": "shell",
+      "label": "RM2",
+      "command": "Remove-Item",
+      "args": ["-Force", "-Recurse", "logs"],
+      "options": {"statusbar": {"hide": true}}
+    },
+    {
+      "label": "CPL",
+      "dependsOn": ["JHC", "RM1", "RM2"],
+      "dependsOrder": "sequence"
+    }
+  ]
+}

@@ -54,7 +54,7 @@ constant integer BUFF_ID = 'A065';
             if (next != null) {
                 AddTimedLight.atUnits("CLSB", this.target, next, 0.75);
                 this.dmg *= 0.5;
-                DamageTarget(this.caster, next, this.dmg, "����-������", false, true, false, WEAPON_TYPE_WHOKNOWS);
+                DamageTarget(this.caster, next, this.dmg, "无限-闪电链", false, true, false, WEAPON_TYPE_WHOKNOWS);
                 GroupAddUnit(this.damaged, next);
                 AddTimedEffect.atUnit(ART_IMPACT, next, "origin", 0.2);
             } else {
@@ -79,7 +79,7 @@ constant integer BUFF_ID = 'A065';
             this.tick = 3;
             AddTimedLight.atUnits("CLPB", this.caster, this.target, 0.75);
             this.dmg = 300.0;
-            DamageTarget(this.caster, this.target, this.dmg, "����-������", false, true, false, WEAPON_TYPE_WHOKNOWS);
+            DamageTarget(this.caster, this.target, this.dmg, "无限-闪电链", false, true, false, WEAPON_TYPE_WHOKNOWS);
             GroupAddUnit(this.damaged, this.target);
             AddTimedEffect.atUnit(ART_IMPACT, this.target, "origin", 0.2);
             TimerStart(this.tm, 0.5, true, function thistype.run);

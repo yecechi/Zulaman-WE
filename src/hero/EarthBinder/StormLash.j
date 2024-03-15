@@ -70,7 +70,7 @@ library StormLash requires DamageSystem, CastingBar, SpellEvent, RareShimmerWeed
                 CoolDown(cd.caster, SID_EARTH_SHOCK);
                 CoolDown(cd.caster, SID_EARTH_SHOCK_1);
                 delayedDosth1.start(cd.caster);
-                //BJDebugMsg("����CD��??");
+                //BJDebugMsg("重置CD了??");
                 delayedDosth.start(cd.caster);
                 RecoverOriginalEarthShock.start(cd.caster, 3.0);
                 //BJDebugMsg("6");

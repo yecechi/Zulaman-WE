@@ -18,7 +18,7 @@ library LifeBloom requires BuffSystem, SpellEvent, UnitProperty, KeeperOfGroveGl
     function onRemove(Buff buf) {
         HealTarget(buf.bd.caster, buf.bd.target, buf.bd.r1, SpellData[SID_LIFE_BLOOM].name, lbexcrit[GetPlayerId(GetOwningPlayer(buf.bd.caster))]);
         AddTimedEffect.atUnit(ART_HEAL, buf.bd.target, "origin", 0.2);
-        //BJDebugMsg("����");   
+        //BJDebugMsg("绽放");   
         
         // equiped benediction
         //if (HasHornOfCenarius(buf.bd.caster)) {
